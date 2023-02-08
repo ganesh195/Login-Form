@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+	<style type="text/css">
+		body{
+			margin: 1000px;
+			padding: 0px;
+			background-image: url("pic1.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			font-family:sans-serif;
+		}
+
+		.loginbox{
+			width: 350px;
+			height: 600px;
+			background-color: #000;
+			color: #fff;
+			top: 50%;
+			left: 50%;
+			position: absolute;
+			transform: translate(-50%,-50%);
+			box-sizing: border-box;
+			padding: 30px ;
+		}
+
+		.avatar{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			position: absolute;
+			top: -50px;
+			left: 35%;
+		}
+
+		h1{
+			margin: 40px;
+			padding: 0 0 20px;
+			text-align: center;
+			font-size: 30px;
+		}
+
+		.loginbox input{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		.loginbox p{
+			margin: 0;
+			padding: 0;
+			font-weight:bold;
+		}
+
+		.loginbox input[type="text"], input[type="password"], input[type="Number"]{
+			border: none;
+			border-bottom: 1px solid #fff;
+			background: transparent;
+			outline: none;
+			color: #fff;
+			font-size: 16px;
+		}
+
+
+		.loginbox input[type="submit"]{
+			font-size: 18px;
+			height: 40px;
+			text-align: center;
+			border:none;
+			outline: none;
+			background-color: red;
+			color: white;
+			border-radius: 20px;
+		}
+
+		.loginbox input[type="submit"]:hover{
+			cursor: pointer;
+			background-color: yellow;
+			color:black;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="loginbox">
+		<img src="avatar.png" class="avatar">
+		<h1>Sign up</h1>
+		<form>
+			<p>Name</p>
+			<input type="text" name="name" placeholder="Enter Name">
+
+			<p>Number</p>
+			<input type="Number" name="Number" placeholder="Enter Number">
+
+			<p>Username</p>
+			<input type="text" name="Username" placeholder="Enter Username">
+
+			<p>Password</p>
+			<input type="Password" name="Password" placeholder="Enter Password">
+
+			<p> Confirm Password</p>
+			<input type="Password" name="Password" placeholder="Enter Confirm Password"><br><br>
+
+			<input type="submit" name="submit" value="Sign Up">
+		</form>
+	</div>
+</body>
+</html>
